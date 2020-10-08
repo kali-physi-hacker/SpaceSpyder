@@ -8,11 +8,13 @@
         - User
         - Vendor
         - Space
-    -   Routers
 
 ## Thursday, 8 October, 2020
 -   Tests
     - models
+-   Controllers
+    - auth
+    - space
 
 
 ### Future
