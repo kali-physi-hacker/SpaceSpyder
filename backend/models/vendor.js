@@ -6,7 +6,8 @@ const removeSchemaChunch = require('../helpers/utils').removeSchemaChunk;
 const vendorSchema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
+        required: true
     }
 })
 
