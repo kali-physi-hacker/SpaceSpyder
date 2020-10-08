@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const jwt = require('jsonwebtoken');
 const config = require('../../helpers/config');
 
 const Space = require('../../models/space');
