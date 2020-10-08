@@ -5,7 +5,12 @@
 -   app.js (Basic setup)
 -   Backend
     -   Models
+        - User
+        - Vendor
+        - Space
     -   Routers
+    - Tests
+        - models
 
 
 ### Future
