@@ -1,0 +1,25 @@
+- User
+  - firstName
+  - lastName
+  - email
+  - password
+  - isStaff
+  - active
+  - lastLogin
+  - dateJoined
+  - vendor
+
+- Vendor
+  - user
+  - email
+  - mobile
+  - officeLine
+  - about
+
+
+- Space
+  - name
+  - description
+  - vendor
+  - dateAdded
+  - available
