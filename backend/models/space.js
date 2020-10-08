@@ -14,7 +14,8 @@ const spaceSchema = mongoose.Schema({
     },
     vendor: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Vendor'
+        ref: 'Vendor',
+        required: true
     },
     dateAdded: {
         type: Date,
