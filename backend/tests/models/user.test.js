@@ -1,5 +1,3 @@
-// import {describe, beforeAll, it} from "@jest/globals";
-
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const config = require('../../helpers/config');
@@ -72,12 +70,11 @@ describe('User Model Test', ()=> {
 
         let err;
         try {
-            const savedUser = await userWithoutReqField.save();
-            error = savedUser;
+            err = await userWithoutReqField.save();
         } catch (error) {
             err = error;
         }
         expect(err).toBeInstanceOf(mongoose.Error.ValidationError);
-        expect(err.errors.email).toBeUndefined();
+        expect(err.errors.email.value).toBeUndefined();
     });
 });
