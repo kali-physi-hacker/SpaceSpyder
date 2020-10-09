@@ -1,0 +1,14 @@
+- Auth
+  - register      (POST)  Register a user
+  - login         (POST)  Login a user and return the user info in addition to user's token
+  - get-user-info (GET)   Return user info
+
+- Space
+  - /             (GET)     Get all spaces
+  - add           (POST)    Add a space
+  - edit          (PUT)     Edit a space detail
+  - delete        (DELETE)  Delete a spac
+
+
+  Bootstrap Template
+    - https://preview.webpixels.io/purpose-website-ui-kit/pages/shop/shop-landing.html
