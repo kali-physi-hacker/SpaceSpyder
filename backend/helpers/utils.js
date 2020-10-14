@@ -3,7 +3,7 @@
  * @param returnedObject
  * @param auth
  */
-const removeSchemaChunk = (returnedObject, auth=false) => {
+const removeSchemaChunk = (returnedObject, auth = false) => {
     returnedObject.id = returnedObject._id.toString();
     delete returnedObject._id;
     delete returnedObject.__v;
@@ -29,7 +29,7 @@ const getToken = request => {
  */
 const noneUndefined = requestBody => {
     let notDefined = false;
-    for (let field of requestBody){
+    for (let field of requestBody) {
         notDefined = field === undefined ? true : {}
     }
     return notDefined
