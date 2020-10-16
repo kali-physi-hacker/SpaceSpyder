@@ -13,7 +13,8 @@ const config = require('./helpers/config');
 
 
 // Controller Imports Here
-
+const authRouter = require('./controllers/auth');
+const spaceRouter = require('./controllers/space.js');
 
 /**
  * MongoDb Connection Initialization Here
@@ -46,7 +47,8 @@ app.get('/', (request, response)=> {
     response.send("Backend Code Working Well");
 })
 // Endpoint Route Middlewares
-
+app.use('/api/auth', authRouter);
+app.use('/api/space', spaceRouter);
 
 // Custom Middlewares (404, 500, etc)
 
