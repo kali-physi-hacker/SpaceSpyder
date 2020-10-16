@@ -29,8 +29,8 @@ const getToken = request => {
  */
 const noneUndefined = requestBody => {
     let notDefined = false;
-    for (let field of requestBody) {
-        notDefined = field === undefined ? true : {}
+    for (let field in requestBody) {
+        notDefined = requestBody[field] === undefined ? true : {}
     }
     return notDefined
 }
