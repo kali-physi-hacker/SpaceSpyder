@@ -90,3 +90,6 @@ spaceRouter.delete('/:id', async(request, response)=> {
         response.status(500).send({error: exception});
     }
 })
+
+
+module.exports = spaceRouter;
