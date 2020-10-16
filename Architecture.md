@@ -16,6 +16,13 @@ through the backend.
 
 #### Technical Overview
 ##### Structure
+- routes
+    - /
+    - /login
+    - /signup
+    - /about
+    - /contact
+    - /coming-soon
 - src
     - App.js
     - components
